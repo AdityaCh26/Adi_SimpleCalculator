@@ -1,0 +1,87 @@
+/* General styling */
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: linear-gradient(160deg, #0093E9, #80D0C7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   margin: 0;
+}
+
+/* Calculator wrapper styling */
+.wrapper {
+   background: rgba(255, 255, 255, 0.41);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+   padding: 20px;
+   width: 320px;
+}
+
+/* Screen styling */
+.screen {
+   background: rgba(255, 255, 255, 0.75);
+   border-radius: 16px;
+   color: #232323;
+   font-size: 32px;
+   text-align: right;
+   padding: 15px;
+   margin-bottom: 20px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+/* Button container styling */
+.calc-buttons {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 10px;
+}
+
+/* General button styling */
+.calc-button {
+   background: rgba(255, 255, 255, 0.9);
+   border: none;
+   border-radius: 16px;
+   box-shadow: 0 4px 15px rgba(35, 35, 35, 0.1);
+   color: #232323;
+   font-size: 24px;
+   height: 65px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+/* Operator button styling */
+.calc-button.operator {
+   color: #232323;
+}
+
+/* Zero button styling */
+.calc-button.zero {
+   grid-column: span 2;
+   width: 100%;
+}
+
+/* Equals button styling */
+.calc-button.equals {
+   background: #5126ff;
+   color: #ffffff;
+   grid-column: span 2;
+   width: 100%;
+}
+
+/* Hover and active states */
+.calc-button:hover {
+   background-color: rgba(255, 255, 255, 0.85);
+}
+
+.calc-button:active {
+   background-color: #ffef78;
+}
+
+
